@@ -1,4 +1,7 @@
 body{
     font-family: sans-serif;
-    color: aliceblue;
 }
+th, td {
+    padding: 10px;
+    border: 1px solid #000;
+  }
