@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="Calendario" content="width=device-width, initial-scale=1">
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    </style>
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="pipaland.html">Pipaland</a>
+        <a href="contact.html">Contactame</a>
+        <a href="about.html">Sobre mi</a>
+        <a href="Taekwondo.html">Taekwondo</a>
+        <a class="active" href="Calendario.html">Calendario</a>
+      </div>
+
+
+
+<script>
+// contdown
+</script>
+
+<br><br><br><br><br><br><br>
+<div align="center">
+    <h1>Proximo stream</h1>
+</div>
+<p id="demo"></p>
+
+<script>
+// Establecer la fecha en la que estamos contando hacia atrás
+var countDownDate = new Date("January 1, 20299 17:00:00").getTime(); 
+
+// Actualizar la cuenta regresiva cada 1 segundo
+var x = setInterval(function() {
+
+  // Obtener la fecha y la hora de hoy
+  var now = new Date().getTime();
+    
+  // Encuentre la distancia entre ahora y la fecha de la cuenta regresiva
+  var distance = countDownDate - now;
+    
+  // Cálculos de tiempo para días, horas, minutos y segundos.
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Muestra el resultado en un elemento con id="demo"
+  document.getElementById("demo").innerHTML = hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // Si la cuenta regresiva ha terminado, escribe un texto 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "FINALIZADA";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
