@@ -41,6 +41,15 @@ p {
   margin-top: 0px;
 }
 </style>
+
+<style>
+  .footer
+  {
+    color: #333;
+    font-size: 12px;
+  }
+</style>
+
 </head>
 <body>
     <div class="topnav">
@@ -77,12 +86,52 @@ p {
         </tr>
       </table>
     </div>
+    <script>
+      // contdown España
+      </script>
+      
+      <br>
+      <div align="center">
+          <h1>Proximo stream España</h1>
+      </div>
+      <p id="demo"></p>
+      
+      <script>
+      // Establecer la fecha en la que estamos contando hacia atrás
+      var countDownDate = new Date("January 1, 20299 17:00:00").getTime(); 
+      
+      // Actualizar la cuenta regresiva cada 1 segundo
+      var x = setInterval(function() {
+      
+        // Obtener la fecha y la hora de hoy
+        var now = new Date().getTime();
+          
+        // Encuentre la distancia entre ahora y la fecha de la cuenta regresiva
+        var distance = countDownDate - now;
+          
+        // Cálculos de tiempo para días, horas, minutos y segundos.
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Muestra el resultado en un elemento con id="demo"
+        document.getElementById("demo").innerHTML = hours + "h "
+        + minutes + "m " + seconds + "s ";
+          
+        // Si la cuenta regresiva ha terminado, escribe un texto 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "FINALIZADA";
+        }
+      }, 1000);
+      </script>
 
     <div align="center">
       <h1>Horario Argentina</h1>
     <table class="default">
       <tr>
-        <td align="center">H. España</td>
+        <td align="center">H. Arg</td>
         <td align="center">Lunes</td>
         <td align="center">Martes</td>
         <td align="center">Miercoles</td>
@@ -104,47 +153,51 @@ p {
     </table>
   </div>
 
-
-<script>
-// contdown
-</script>
-
-<br><br><br><br><br><br><br>
-<div align="center">
-    <h1>Proximo stream</h1>
-</div>
-<p id="demo"></p>
-
-<script>
-// Establecer la fecha en la que estamos contando hacia atrás
-var countDownDate = new Date("January 1, 20299 17:00:00").getTime(); 
-
-// Actualizar la cuenta regresiva cada 1 segundo
-var x = setInterval(function() {
-
-  // Obtener la fecha y la hora de hoy
-  var now = new Date().getTime();
+  <script>
+    // contdown Argentina
+    </script>
     
-  // Encuentre la distancia entre ahora y la fecha de la cuenta regresiva
-  var distance = countDownDate - now;
+    <br>
+    <div align="center">
+        <h1>Proximo stream Argentina</h1>
+    </div>
+    <p id="demoa"></p>
     
-  // Cálculos de tiempo para días, horas, minutos y segundos.
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    <script>
+    // Establecer la fecha en la que estamos contando hacia atrás
+    var countDownDatea = new Date("January 1, 20299 12:00:00").getTime(); 
     
-  // Muestra el resultado en un elemento con id="demo"
-  document.getElementById("demo").innerHTML = hours + "h "
-  + minutes + "m " + seconds + "s ";
+    // Actualizar la cuenta regresiva cada 1 segundo
+    var x = setInterval(function() {
     
-  // Si la cuenta regresiva ha terminado, escribe un texto 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "FINALIZADA";
-  }
-}, 1000);
-</script>
+      // Obtener la fecha y la hora de hoy
+      var now = new Date().getTime();
+        
+      // Encuentre la distancia entre ahora y la fecha de la cuenta regresiva
+      var distance = countDownDatea - now;
+        
+      // Cálculos de tiempo para días, horas, minutos y segundos.
+      var daysa = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hoursa = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutesa = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var secondsa = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Muestra el resultado en un elemento con id="demo"
+      document.getElementById("demoa").innerHTML = hoursa + "h "
+      + minutesa + "m " + secondsa + "s ";
+        
+      // Si la cuenta regresiva ha terminado, escribe un texto 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demoa").innerHTML = "FINALIZADA";
+      }
+    }, 1000);
+    </script>
+
+<footer class="footer">
+  <P> <h4 align="center">__________________________________________________________________Creado y diseñado por <a href="https://twitch.tv/taoir">Taoir</a>__________________________________________________________________</h4></P>
+  <p align="center"><a href="https://twitch.tv/taoir"><img src="img/Tlogo.png"></a></p>
+</footer>
 
 </body>
 </html>
