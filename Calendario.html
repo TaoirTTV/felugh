@@ -65,17 +65,17 @@ p {
         <h1>Horario España</h1>
       <table class="default">
         <tr>
-          <td align="center">H. España</td>
-          <td align="center">Lunes</td>
-          <td align="center">Martes</td>
-          <td align="center">Miercoles</td>
-          <td align="center">Jueves</td>
-          <td align="center">Viernes</td>
-          <td align="center">Sabado</td>
-          <td align="center">Domingo</td>
+          <td align="center" style="background-color: #04AA6D;">H. España</td>
+          <td align="center"style="background-color: #04AA6D;">Lunes</td>
+          <td align="center"style="background-color: #04AA6D;">Martes</td>
+          <td align="center"style="background-color: #04AA6D;">Miercoles</td>
+          <td align="center"style="background-color: #04AA6D;">Jueves</td>
+          <td align="center"style="background-color: #04AA6D;">Viernes</td>
+          <td align="center"style="background-color: #04AA6D;">Sabado</td>
+          <td align="center"style="background-color: #04AA6D;">Domingo</td>
         </tr>
         <tr>
-          <td align="center">18:00</td>
+          <td align="center"style="background-color: #04AA6D;">18:00</td>
           <td align="center">Sí</td>
           <td align="center">No</td>
           <td align="center">Sí</td>
@@ -131,17 +131,17 @@ p {
       <h1>Horario Argentina</h1>
     <table class="default">
       <tr>
-        <td align="center">H. Arg</td>
-        <td align="center">Lunes</td>
-        <td align="center">Martes</td>
-        <td align="center">Miercoles</td>
-        <td align="center">Jueves</td>
-        <td align="center">Viernes</td>
-        <td align="center">Sabado</td>
-        <td align="center">Domingo</td>
+        <td align="center"style="background-color: #04AA6D;">H. Arg</td>
+        <td align="center"style="background-color: #04AA6D;">Lunes</td>
+        <td align="center"style="background-color: #04AA6D;">Martes</td>
+        <td align="center"style="background-color: #04AA6D;">Miercoles</td>
+        <td align="center"style="background-color: #04AA6D;">Jueves</td>
+        <td align="center"style="background-color: #04AA6D;">Viernes</td>
+        <td align="center"style="background-color: #04AA6D;">Sabado</td>
+        <td align="center"style="background-color: #04AA6D;">Domingo</td>
       </tr>
       <tr>
-        <td align="center">13:00</td>
+        <td align="center"style="background-color: #04AA6D;">13:00</td>
         <td align="center">Sí</td>
         <td align="center">No</td>
         <td align="center">Sí</td>
@@ -185,19 +185,23 @@ p {
       // Muestra el resultado en un elemento con id="demo"
       document.getElementById("demoa").innerHTML = hoursa + "h "
       + minutesa + "m " + secondsa + "s ";
-        
+      
       // Si la cuenta regresiva ha terminado, escribe un texto 
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("demoa").innerHTML = "FINALIZADA";
       }
+      else if (hoursa > 21)
+      {
+        
+      }
     }, 1000);
     </script>
 
-<footer class="footer">
+<footer class="footer" style="background-color: #04AA6D;">
   <P> <h4 align="center">__________________________________________________________________Creado y diseñado por <a href="https://twitch.tv/taoir">Taoir</a>__________________________________________________________________</h4></P>
   <p align="center"><a href="https://twitch.tv/taoir"><img src="img/Tlogo.png"></a></p>
+  <br><br><br>
 </footer>
-
 </body>
 </html>
