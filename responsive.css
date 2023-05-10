@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 300px;
+}
+
+.inflex:first-child{
+    flex: 2;
+    padding: 25px;
+    margin: 20;
+    margin-bottom: 0px;
+}
