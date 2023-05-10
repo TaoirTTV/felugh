@@ -4,6 +4,8 @@
 <meta name="Calendario" content="width=device-width, initial-scale=1">
 <link rel="shoucut icon" href="img/Pipaland-fondo-blanco.ico">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="scroll.css">
+<title>Calendario | FelughPagina</title>
 <style>
     body {
       margin: 0;
@@ -86,13 +88,16 @@ p {
         </tr>
       </table>
     </div>
+    <div align="center">
+      <h1 id="Es">Proximo stream España</h1>
+        <h1 id="streamEs" style="visibility: hidden;" style="display:none"><a href="https://twitch.tv/felugh">Felugh esta en stream</a></h1>
+    </div>
     <script>
       // contdown España
       </script>
       
       <br>
       <div align="center">
-          <h1>Proximo stream España</h1>
       </div>
       <p id="demo"></p>
       
@@ -123,6 +128,13 @@ p {
         if (distance < 0) {
           clearInterval(x);
           document.getElementById("demo").innerHTML = "FINALIZADA";
+        }
+        else if (hours > 20)
+        {
+        document.getElementById("demo").style.visibility='hidden';
+        document.getElementById("streamEs").style.visibility='visible';
+        document.getElementById("Es").style.visibility='hidden';
+        document.getElementById("streamEs").style.display='block';
         }
       }, 1000);
       </script>
@@ -159,9 +171,11 @@ p {
     
     <br>
     <div align="center">
-        <h1>Proximo stream Argentina</h1>
+      <h1 id="Arg">Proximo stream Argentina</h1>
+        <h1 id="streamArg" style="visibility: hidden;" style="display:none"><a href="https://twitch.tv/felugh">Felugh esta en stream</a></h1>
     </div>
     <p id="demoa"></p>
+    
     
     <script>
     // Establecer la fecha en la que estamos contando hacia atrás
@@ -191,9 +205,11 @@ p {
         clearInterval(x);
         document.getElementById("demoa").innerHTML = "FINALIZADA";
       }
-      else if (hoursa > 21)
+      else if (hoursa > 20)
       {
-        
+        document.getElementById("demoa").style.visibility='hidden';
+        document.getElementById("streamArg").style.visibility='visible';
+        document.getElementById("Arg").style.visibility='hidden';
       }
     }, 1000);
     </script>
