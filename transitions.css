@@ -1,0 +1,18 @@
+.element {
+    /* Primer ejemplo: Anima todas las propiedades que cambien de estado */
+    transition-property:  4s;
+  
+    /* Segundo ejemplo: Anima sólo el ancho, el resto no transicionan, cambian de golpe */
+    transition-property: width 4s;
+  }
+  a {
+    color: #d400ff;
+  }
+  
+  a:hover {
+    color: #04AA6D;
+  
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
