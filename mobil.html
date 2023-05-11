@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FelughPagina | Vista mobil.</title>
-    
+    <link rel="stylesheet" href="scroll.css">
     <style>
         
         body {
@@ -44,18 +44,186 @@
                 font-size: 30px;
             }
         </style>
+        <style>
+          .box {
+    inline-size: 85%;
+    overflow-wrap: break-word;
+}
+.red{
+  color:red
+}
+        </style>
 
 </head>
 <body>
     <div class="topnav">
         <a href="index.html">Home</a>
-        <a href="pipaland.html">Pipaland</a>
-        <a href="contact.html">Contactame</a>
-        <a href="about.html">Sobre mi</a>
-        <a href="taekwondo.html">Taekwondo</a>
-        <a href="Calendario.html">Calendario</a>
-        <a href="teresConFelugh.html">Teres con Felugh</a>
         <a class="active" href="mobil.html">Vista Mobil</a>
       </div>
+      <div align="center">
+        <img src="img/logo_felugh.png">
+        <h1>Quien es Felugh?</h1>
+      </div>
+      <div class="box" >
+        <p style="margin-left: 15%;">Es un streamer argento el cual se dedica en especial al minecraft tecnico, pero de vez en cuando juega otros juegos de rol o de estrategia, en los directos suelo hablar mucho con la gente y pueden usarme como podscat en vivo, tengo 19 años vivo en argentina, hago taekwon-do desde muy chiquito, me gustan las pipas y los tereres por eso soy el rey, juego minecraft, league of legends, valorant, etc me gustan los juegos de aventura y accion.</p>
+        <p style="margin-left: 15%;">Felugh es un creador de contenido en línea que transmite su juego en vivo en plataformas como Twitch. Se sabe que es un jugador apasionado de Minecraft, y ha creado una comunidad de seguidores leales que disfrutan verlo jugar y construir en este popular juego.</p>
+        <p style="margin-left: 15%;">Aunque no se sabe mucho sobre su vida personal, se cree que Felugh es un joven de 19 años que ha desarrollado una gran cantidad de granjas y decoraciones  en el juego Minecraft, y lo muestra en sus streams. Su estilo de juego es atractivo y cautivador.
+          Se le describe como un streamer comprometido y entusiasta, que está dedicado a crear contenido emocionante y entretenido para sus seguidores.</p>
+          <p style="margin-left: 15%;">Además de jugar Minecraft, Felugh también puede transmitir otros juegos y ocasionalmente</p>
+        </div>
+        <h1 align="center">Donde lo puedo encontrar?</h1>
+        <div class="box">
+          <p style="margin-left: 15%;">Normalmente podras encontrar a felugh en Twitch pero sino esta en stream seguramente lo puedes encontrar en su instagram o en su discord en el cual podra responder a tus mensajes, tambien tiene cuenta de tik tok donde lo encontraras frecuentemente subiendo contenido.</p>
+        </div>
+        <div align="center">
+          <h1>Horario España</h1>
+        <table class="default">
+          <tr>
+            <td align="center" style="background-color: #04AA6D;">H. España</td>
+            <td align="center"style="background-color: #04AA6D;">Lunes</td>
+            <td align="center"style="background-color: #04AA6D;">Martes</td>
+            <td align="center"style="background-color: #04AA6D;">Miercoles</td>
+            <td align="center"style="background-color: #04AA6D;">Jueves</td>
+            <td align="center"style="background-color: #04AA6D;">Viernes</td>
+            <td align="center"style="background-color: #04AA6D;">Sabado</td>
+            <td align="center"style="background-color: #04AA6D;">Domingo</td>
+          </tr>
+          <tr>
+            <td align="center"style="background-color: #04AA6D;">18:00</td>
+            <td align="center">Sí</td>
+            <td align="center">No</td>
+            <td align="center">Sí</td>
+            <td align="center">Sí</td>
+            <td align="center">No</td>
+            <td align="center">Sí</td>
+            <td align="center">Sí</td>
+          </tr>
+        </table>
+      </div>
+      <div align="center">
+        <h1 id="Es">Proximo stream España</h1>
+          <h1 id="streamEs" style="visibility: hidden;" style="display:none"><a href="https://twitch.tv/felugh">Felugh esta en stream</a></h1>
+      </div>
+      <script>
+        // contdown España
+        </script>
+        
+        <br>
+        <div align="center">
+        </div>
+        <p id="demo"></p>
+        
+        <script>
+        // Establecer la fecha en la que estamos contando hacia atrás
+        var countDownDate = new Date("January 1, 20299 17:00:00").getTime(); 
+        
+        // Actualizar la cuenta regresiva cada 1 segundo
+        var x = setInterval(function() {
+        
+          // Obtener la fecha y la hora de hoy
+          var now = new Date().getTime();
+            
+          // Encuentre la distancia entre ahora y la fecha de la cuenta regresiva
+          var distance = countDownDate - now;
+            
+          // Cálculos de tiempo para días, horas, minutos y segundos.
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Muestra el resultado en un elemento con id="demo"
+          document.getElementById("demo").innerHTML = hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // Si la cuenta regresiva ha terminado, escribe un texto 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "FINALIZADA";
+          }
+          else if (hours > 20)
+          {
+          document.getElementById("demo").style.visibility='hidden';
+          document.getElementById("streamEs").style.visibility='visible';
+          document.getElementById("Es").style.visibility='hidden';
+          document.getElementById("streamEs").style.display='block';
+          }
+        }, 1000);
+        </script>
+  
+      <div align="center">
+        <h1>Horario Argentina</h1>
+      <table class="default">
+        <tr>
+          <td align="center"style="background-color: #04AA6D;">H. Arg</td>
+          <td align="center"style="background-color: #04AA6D;">Lunes</td>
+          <td align="center"style="background-color: #04AA6D;">Martes</td>
+          <td align="center"style="background-color: #04AA6D;">Miercoles</td>
+          <td align="center"style="background-color: #04AA6D;">Jueves</td>
+          <td align="center"style="background-color: #04AA6D;">Viernes</td>
+          <td align="center"style="background-color: #04AA6D;">Sabado</td>
+          <td align="center"style="background-color: #04AA6D;">Domingo</td>
+        </tr>
+        <tr>
+          <td align="center"style="background-color: #04AA6D;">13:00</td>
+          <td align="center">Sí</td>
+          <td align="center">No</td>
+          <td align="center">Sí</td>
+          <td align="center">Sí</td>
+          <td align="center">No</td>
+          <td align="center">Sí</td>
+          <td align="center">Sí</td>
+        </tr>
+      </table>
+    </div>
+  
+    <script>
+      // contdown Argentina
+      </script>
+      
+      <br>
+      <div align="center">
+        <h1 id="Arg">Proximo stream Argentina</h1>
+          <h1 id="streamArg" style="visibility: hidden;" style="display:none"><a href="https://twitch.tv/felugh">Felugh esta en stream</a></h1>
+      </div>
+      <p id="demoa"></p>
+      
+      
+      <script>
+      // Establecer la fecha en la que estamos contando hacia atrás
+      var countDownDatea = new Date("January 1, 20299 12:00:00").getTime(); 
+      
+      // Actualizar la cuenta regresiva cada 1 segundo
+      var x = setInterval(function() {
+      
+        // Obtener la fecha y la hora de hoy
+        var now = new Date().getTime();
+          
+        // Encuentre la distancia entre ahora y la fecha de la cuenta regresiva
+        var distance = countDownDatea - now;
+          
+        // Cálculos de tiempo para días, horas, minutos y segundos.
+        var daysa = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hoursa = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutesa = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var secondsa = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Muestra el resultado en un elemento con id="demo"
+        document.getElementById("demoa").innerHTML = hoursa + "h "
+        + minutesa + "m " + secondsa + "s ";
+        
+        // Si la cuenta regresiva ha terminado, escribe un texto 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demoa").innerHTML = "FINALIZADA";
+        }
+        else if (hoursa > 20)
+        {
+          document.getElementById("demoa").style.visibility='hidden';
+          document.getElementById("streamArg").style.visibility='visible';
+          document.getElementById("Arg").style.visibility='hidden';
+        }
+      }, 1000);
+      </script>
 </body>
 </html>
